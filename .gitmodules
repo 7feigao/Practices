@@ -1,0 +1,12 @@
+[submodule "tools/MavenPractices"]
+	path = tools/MavenPractices
+	url = git@github.com:7feigao/MavenPractices.git
+[submodule "tools/kafkaPractice"]
+	path = tools/kafkaPractice
+	url = git@github.com:7feigao/kafkaPractice.git
+[submodule "langs/PythonPractice"]
+	path = langs/PythonPractice
+	url = git@github.com:7feigao/PythonPractice.git
+[submodule "langs/JavaPractice"]
+	path = langs/JavaPractice
+	url = git@github.com:7feigao/JavaPractice.git
