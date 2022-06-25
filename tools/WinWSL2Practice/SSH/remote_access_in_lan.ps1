@@ -1,3 +1,6 @@
+# run wsl init script, include start ssh service
+wsl -d Ubuntu-20.04 -u root bash /etc/init.wsl
+
 $remoteport = $(wsl -- hostname -I)
 $found = $remoteport -match '\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}';
 
