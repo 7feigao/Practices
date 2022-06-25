@@ -1,0 +1,2 @@
+PowerShell -Command "Set-ExecutionPolicy Unrestricted" >> "C:\Users\gaoqi\Documents\wsl2-export-ports.txt" 2>&1
+PowerShell C:\Windows\System32\wsl_ports_export\remote_access_in_lan.ps1 >> "C:\Users\gaoqi\Documents\wsl2-export-ports.txt" 2>&1

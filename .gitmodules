@@ -10,3 +10,6 @@
 [submodule "langs/JavaPractice"]
 	path = langs/JavaPractice
 	url = git@github.com:7feigao/JavaPractice.git
+[submodule "os/Linux_Practice"]
+	path = os/Linux_Practice
+	url = git@github.com:7feigao/Linux_Practice.git

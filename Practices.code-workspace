@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../kafkaPractice"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../Linux_Practice"
+		}
+	],
+	"settings": {}
+}
