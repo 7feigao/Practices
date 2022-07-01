@@ -14,13 +14,14 @@ if( $found ){
 #[Ports]
 
 #All the ports you want to forward separated by coma
-$ports=@(2222,28123);
+$ports=@(24434);
 
 
 #[Static ip]
 #You can change the addr to your ip config to listen to a specific address
 $addr='0.0.0.0';
 $ports_a = $ports -join ",";
+$addrv6='::'
 
 
 #Remove Firewall Exception Rules
@@ -34,6 +35,8 @@ for( $i = 0; $i -lt $ports.length; $i++ ){
   $port = $ports[$i];
   iex "netsh interface portproxy delete v4tov4 listenport=$port listenaddress=$addr";
   iex "netsh interface portproxy add v4tov4 listenport=$port listenaddress=$addr connectport=$port connectaddress=$remoteport";
+  iex "netsh interface portproxy delete v6tov4 listenport=$port listenaddress=$addrv6";
+  iex "netsh interface portproxy add v6tov4 listenport=$port listenaddress=$addrv6 connectport=$port connectaddress=$remoteport";
 }
 
 echo "Success!";
