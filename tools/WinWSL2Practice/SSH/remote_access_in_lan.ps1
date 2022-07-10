@@ -38,5 +38,7 @@ for( $i = 0; $i -lt $ports.length; $i++ ){
   iex "netsh interface portproxy delete v6tov4 listenport=$port listenaddress=$addrv6";
   iex "netsh interface portproxy add v6tov4 listenport=$port listenaddress=$addrv6 connectport=$port connectaddress=$remoteport";
 }
+# enable access from ipv6 in win10
+netsh firewall set icmpsetting type=all mode=enable
 
 echo "Success!";
